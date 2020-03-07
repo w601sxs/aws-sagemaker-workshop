@@ -1,15 +1,13 @@
 ---
-title: "AWS JPL Rover Workshop"
+title: "Amazon SageMaker Workshop"
 chapter: true
 weight: 1
 ---
 
-# AWS JPL Rover Workshop
+# Amazon SageMaker
 
-Welcome! The exploration of space continues to occur at a rapid pace. We want you to journey to Mars and use your skills to improve how rovers on the Red Planet help unlock the secrets of the universe.
+Welcome! Amazon SageMaker is a fully managed service that provides every developer and data scientist with the ability to build, train, and deploy machine learning (ML) models quickly. SageMaker removes the heavy lifting from each step of the machine learning process to make it easier to develop high quality models.
 
-The goal of this challenge is to use machine learning to autonomously operate the virtual Open-Source Rover created by NASA’s Jet Propulsion Laboratory (JPL) to explore the surface of Mars.
-
-In this workshop you become familiar with AWS RoboMaker, a service that enables you to easily develop, simulate and deploy intelligent robot applications that integrate with AWS services. You will also learn about Amazon Sagemaker, which helps you build, train, tune and deploy Machine Learning, Deep Learning and **Reinforcement Learning** models at scale. 
+Traditional ML development is a complex, expensive, iterative process made even harder because there are no integrated tools for the entire machine learning workflow. You need to stitch together tools and workflows, which is time-consuming and error-prone. SageMaker solves this challenge by providing all of the components used for machine learning in a single toolset so models get to production faster with much less effort and at lower cost.
 
 [Click here to get started!](/workshop)

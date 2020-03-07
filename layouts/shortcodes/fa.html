@@ -1,0 +1,6 @@
+<!-- Load fontawesome only once per page -->
+{{ if not (.Page.Scratch.Get "fontawesomeLoaded") }}
+  {{ .Page.Scratch.Set "fontawesomeLoaded" true }}
+  <script defer src="/fontawesome-all.js"></script>
+{{ end }}
+<i class="fas {{ range $element := .Params }} fa-{{ $element }} {{ end }}"></i>
