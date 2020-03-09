@@ -19,21 +19,21 @@ In this workshop, we will walk you through the components required to build and 
     <title>Amazon SageMaker Workshop :: Amazon RoboMaker Workshop</title>
 
     
-    <link href="../css/nucleus.css?1583795522" rel="stylesheet">
-    <link href="../css/fontawesome-all.min.css?1583795522" rel="stylesheet">
-    <link href="../css/hybrid.css?1583795522" rel="stylesheet">
-    <link href="../css/featherlight.min.css?1583795522" rel="stylesheet">
-    <link href="../css/perfect-scrollbar.min.css?1583795522" rel="stylesheet">
-    <link href="../css/auto-complete.css?1583795522" rel="stylesheet">
-    <link href="../css/theme.css?1583795522" rel="stylesheet">
-    <link href="../css/hugo-theme.css?1583795522" rel="stylesheet">
-    <link href="../css/jquery-ui.min.css?1583795522" rel="stylesheet">
+    <link href="../css/nucleus.css?1583796667" rel="stylesheet">
+    <link href="../css/fontawesome-all.min.css?1583796667" rel="stylesheet">
+    <link href="../css/hybrid.css?1583796667" rel="stylesheet">
+    <link href="../css/featherlight.min.css?1583796667" rel="stylesheet">
+    <link href="../css/perfect-scrollbar.min.css?1583796667" rel="stylesheet">
+    <link href="../css/auto-complete.css?1583796667" rel="stylesheet">
+    <link href="../css/theme.css?1583796667" rel="stylesheet">
+    <link href="../css/hugo-theme.css?1583796667" rel="stylesheet">
+    <link href="../css/jquery-ui.min.css?1583796667" rel="stylesheet">
     
-      <link href="../css/theme-mine.css?1583795522" rel="stylesheet">
+      <link href="../css/theme-mine.css?1583796667" rel="stylesheet">
     
 
-    <script src="../js/jquery-3.3.1.min.js?1583795522"></script>
-    <script src="../js/jquery-ui-1.12.1.min.js?1583795522"></script>
+    <script src="../js/jquery-3.3.1.min.js?1583796667"></script>
+    <script src="../js/jquery-ui-1.12.1.min.js?1583796667"></script>
 
 
     <style type="text/css">
@@ -65,14 +65,14 @@ In this workshop, we will walk you through the components required to build and 
     <span data-search-clear=""><i class="fas fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="../js/lunr.min.js?1583795522"></script>
-<script type="text/javascript" src="../js/auto-complete.js?1583795522"></script>
+<script type="text/javascript" src="../js/lunr.min.js?1583796667"></script>
+<script type="text/javascript" src="../js/auto-complete.js?1583796667"></script>
 <script type="text/javascript">
     
         var baseurl = '\/';
     
 </script>
-<script type="text/javascript" src="../js/search.js?1583795522"></script>
+<script type="text/javascript" src="../js/search.js?1583796667"></script>
 
     
   </div>
@@ -918,31 +918,198 @@ In this workshop, we will walk you through the components required to build and 
 	<p>
 	Learn how Sagemaker Autopilot Works
 	</p>
-
+	<p><img src="../images/autopilot-how-it-works.png" alt="How it works"></p>
+<p>Using a single API call, or a few clicks in Amazon SageMaker Studio, SageMaker Autopilot first inspects your data set, and runs a number of candidates to figure out the optimal combination of data preprocessing steps, machine learning algorithms and hyperparameters. Then, it uses this combination to train an Inference Pipeline, which you can easily deploy either on a real-time endpoint or for batch processing. As usual with Amazon SageMaker, all of this takes place on fully-managed infrastructure.</p>
+<p>Last but not least, SageMaker Autopilot also generate Python code showing you exactly how data was preprocessed: not only can you understand what SageMaker Autopilot did, you can also reuse that code for further manual tuning if you’re so inclined.</p>
+<p>As of today, SageMaker Autopilot supports:</p>
+<ul>
+<li>Input data in tabular format, with automatic data cleaning and preprocessing,</li>
+<li>Automatic algorithm selection for linear regression, binary classification, and multi-class classification,</li>
+<li>Automatic hyperparameter optimization,</li>
+<li>Distributed training,</li>
+<li>Automatic instance and cluster size selection.</li>
+</ul>
+<p>Also see these links for a walkthrough for what we will be doing today:</p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=qMEtqJPhqpA">AutoML with SageMaker Part 1</a></li>
+<li><a href="https://www.youtube.com/watch?v=WsfRAeGzgm8">AutoML with SageMaker Part 2</a></li>
+<li><a href="https://www.youtube.com/watch?v=KZSTsWrDGXs">AutoML with SageMaker Part 3</a></li>
+</ul>
+   
 
 	<p><strong><a href="../workshop/getstarted/">Getting Started</a></strong></p>
 	<p>
 	In this activity you will either set up SageMaker Studio or a SageMaker notebook instance
 	</p>
-
+	<p>To get started, you will need an AWS account. You can either use:</p>
+<ol>
+<li>Your own account; or &hellip;</li>
+<li>An account provided through Event Engine, as part of an AWS organized workshop</li>
+</ol>
+<blockquote>
+<p>If you are running this workshop as part of an Event Engine lab, please log into the console using <a href="https://dashboard.eventengine.run/">this link</a> and enter your hash.</p>
+</blockquote>
+<p>Otherwise, if you are doing this lab on your own, please follow the following instructions to either:</p>
+<ol>
+<li>Get started with Amazon SageMaker Studio, by following instructions <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/gs-studio.html">here</a>; or &hellip;</li>
+<li>Get started with the lab by creating your own notebook instance, as shown <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/gs-setup-working-env.html">here</a></li>
+</ol>
+<p><img src="../images/choiceonsm.png" alt="Get started"></p>
+   
 
 	<p><strong><a href="../workshop/loadexample/">Load Autopilot Example</a></strong></p>
 	<p>
 	Start by loading the AutoPilot example on SageMaker
 	</p>
+	<h2 id="load-example-on-sagemaker-studio">Load Example on Sagemaker Studio</h2>
+<ol>
+<li>
+<p>Navigate to the Commands tab - 4th icon on the left ( 
 
+  
+  <script defer src="../fontawesome-all.js"></script>
+
+<i class="fas  fa-palette "></i> ) and click &ldquo;Getting Started&rdquo;.
+<img src="../images/welcomestudio.png" alt=""></p>
+</li>
+<li>
+<p>Then click &ldquo;Create Autopilot Experiment&rdquo; - you will see the following window:</p>
+</li>
+</ol>
+<p><img src="../images/createauto.png" alt=""></p>
+<ul>
+<li>
+<p>For <code>Experiment name</code>, enter : Sagemaker-test-autopilot&rdquo; or something similar</p>
+</li>
+<li>
+<p>For <code>S3 location of input data</code>, enter : <a href="https://sagemaker-getting-started-data.s3.us-east-2.amazonaws.com/bank-additional-full.csv">https://sagemaker-getting-started-data.s3.us-east-2.amazonaws.com/bank-additional-full.csv</a></p>
+</li>
+<li>
+<p>For <code>Target attribute name</code>, enter : y</p>
+</li>
+<li>
+<p>And for <code>S3 location of output data</code>, enter an s3 location within your account. To create an S3 bucket within your account, <a href="https://docs.aws.amazon.com/AmazonS3/latest/user-guide/create-bucket.html">use this link</a>. <em>Note</em> : please use <code>us-east-2</code> for &ldquo;region&rdquo; in step 4 of this guide. If you have an existing bucket in <code>us-east-2</code> that you would like to use, feel free to do so!</p>
+</li>
+</ul>
+<h2 id="load-example-on-sagemaker-notebook-instance">Load Example on Sagemaker Notebook Instance</h2>
+<ol>
+<li>Once you open Jupyter on your SageMaker notebook instance, you can navigate to the &ldquo;SageMaker examples&rdquo; tab</li>
+</ol>
+<p><img src="../images/SagemakerExamples.png" alt=""></p>
+<ol start="2">
+<li>Expand the title &ldquo;Autopilot&rdquo; by clicking it, and then click &ldquo;Use&rdquo;</li>
+</ol>
+<p><img src="../images/Use.png" alt=""></p>
+<ol start="3">
+<li>This will open the Autopilot example:</li>
+</ol>
+<p><img src="../images/jupyterexample.png" alt=""></p>
+<ol start="4">
+<li>Make sure you change your Kernel to &ldquo;Conda Python 3&rdquo; if it isn&rsquo;t already set to that.</li>
+</ol>
+<p><img src="../images/changekernel.png" alt=""></p>
+   
 
 	<p><strong><a href="../workshop/runexample/">Run Autopilot Example</a></strong></p>
 	<p>
 	Run the AutoPilot example on SageMaker
 	</p>
+	<p>A typical introductory task in machine learning (the &ldquo;Hello World&rdquo; equivalent) is one that uses a dataset to predict whether a customer will enroll for a term deposit at a bank, after one or more phone calls. For more information about the task and the dataset used, see Bank Marketing Data Set.</p>
+<p>Direct marketing, through mail, email, phone, etc., is a common tactic to acquire customers. Because resources and a customer&rsquo;s attention are limited, the goal is to only target the subset of prospects who are likely to engage with a specific offer. Predicting those potential customers based on readily available information like demographics, past interactions, and environmental factors is a common machine learning problem. You can imagine that this task would readily translate to marketing lead prioritization in your own organization.</p>
+<p>This example demonstrates how you can use Autopilot on this dataset to get the most accurate ML pipeline through exploring a number of potential options, or &ldquo;candidates&rdquo;. Each candidate generated by Autopilot consists of two steps. The first step performs automated feature engineering on the dataset and the second step trains and tunes an algorithm to produce a model. When you deploy this model, it follows similar steps. Feature engineering followed by inference, to decide whether the lead is worth pursuing or not. The notebook contains instructions on how to train the model as well as to deploy the model to perform batch predictions on a set of leads. Where it is possible, use the Amazon SageMaker Python SDK, a high level SDK, to simplify the way you interact with Amazon SageMaker. Let&rsquo;s explore two ways to run this example:</p>
+<h2 id="run-example-on-sagemaker-studio">Run Example on Sagemaker Studio</h2>
+<ol>
+<li>
+<p>Clicking &ldquo;Create Experiment&rdquo; in the previous step will open the following tab
+<img src="../images/experimentstarted.png" alt=""></p>
+</li>
+<li>
+<p>Track the progress of your experiment using the progress bar shown below. In this case, SageMaker Autopilot is done with &ldquo;Analyzing data&rdquo; and the &ldquo;Feature Engineering&rdquo; steps and is currently running &ldquo;Model tuning&rdquo;
+<img src="../images/keeptrack.png" alt=""></p>
+</li>
+<li>
+<p>The trials tab helps you keep track of training jobs that are completed, in progress and the training job that is the best so far:
+<img src="../images/inprogcomplete.png" alt=""></p>
+</li>
+<li>
+<p>To get more details about a particular trial, you can right click on any trial and click &ldquo;Open in Trial details&rdquo;
+<img src="../images/rightclick.png" alt=""></p>
+</li>
+<li>
+<p>Click on &ldquo;Objective&rdquo; to sort the trial rows by objective - this will put the best trial on the top
+<img src="../images/sorted.png" alt=""></p>
+</li>
+<li>
+<p>Right-click on the best trial and click &ldquo;Open in Trial component list&rdquo;. Highlight the first 15 rows by holding down ctrl and click through, or by clicking the first row, and clicking on the 15th row while holding down shift. Then click &ldquo;Add chart&rdquo;
+<img src="../images/addchart.png" alt=""></p>
+</li>
+<li>
+<p>Scroll down and click the &ldquo;New Chart&rdquo; area
+<img src="../images/newchart.png" alt=""></p>
+</li>
+<li>
+<p>Under Chart Properties in the right side-bar, select Data type : &ldquo;Summary Statistics&rdquo;, Chart type : &ldquo;Histogram&rdquo; and use the drop-down under X-axis to select validation:accuracy_avg
+<img src="../images/chartdetails.png" alt=""> Feel free to explore other charts!</p>
+</li>
+<li>
+<p>In the Trial components list, click any trial followed by &ldquo;Deploy model&rdquo;. Add an endpoint name, and any other optional parameters and click the [Deploy model] button!
+<img src="../images/deploymodel.png" alt=""></p>
+</li>
+<li>
+<p>(Optional) Enable model monitoring and run through the notebook that opens up. Read more about model monitoring <a href="https://aws.amazon.com/blogs/aws/amazon-sagemaker-model-monitor-fully-managed-automatic-monitoring-for-your-machine-learning-models/">here</a>
+<img src="../images/modelmonitoring.png" alt=""></p>
+</li>
+</ol>
+<h2 id="run-example-on-sagemaker-notebook-instance">Run Example on Sagemaker Notebook Instance</h2>
+<ol>
+<li>
+<p>To run cells in your notebook, click a cell followed by the [
 
+  
+  <script defer src="../fontawesome-all.js"></script>
+
+<i class="fas  fa-play "></i> Run] button on the top toolbar. You can also click a cell and hit shift+enter</p>
+</li>
+<li>
+<p>Start by running the cells that import necessary packages like sagemaker (python SDK), and set parameters such as region, bucket, prefix and role for later use. Then run the cell the downloads the data.
+<img src="../images/notebookstarted.png" alt=""></p>
+</li>
+<li>
+<p>Read data using padas read_csv
+<img src="../images/readdata.png" alt=""></p>
+</li>
+<li>
+<p>Split the data into a <em>train</em> set and a <em>test</em> dataset
+<img src="../images/splitdata.png" alt=""></p>
+</li>
+<li>
+<p>Run the next cell to set up and launch the autopilot job
+<img src="../images/launchjob.png" alt=""></p>
+</li>
+<li>
+<p>Run and track the status of the job:
+<img src="../images/trackjob.png" alt=""></p>
+</li>
+<li>
+<p>Run the rest of the notebook to get the best candidate job, and to view the &ldquo;Candidate generation&rdquo; and &ldquo;Data exploration&rdquo; notebooks that were generated by SageMaker Autopilot.</p>
+</li>
+</ol>
+   
 
 	<p><strong><a href="../workshop/cleanup/">Workshop Clean-up</a></strong></p>
 	<p>
 	Please read through and complete each activity before starting the next.
 	</p>
-
+	<p>Please follow the steps below to shutdown or delete resources so you will not be charged.</p>
+<ol>
+<li>
+<p>Delete the <strong>S3 bucket</strong> by selecting the bucket then clicking <em>Delete</em> from above the list of buckets.</p>
+</li>
+<li>
+<p>Delete any notebook instances you may have created.</p>
+</li>
+</ol>
+   
 
 
 <p></p>
@@ -1474,20 +1641,20 @@ In this workshop, we will walk you through the components required to build and 
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="../js/clipboard.min.js?1583795522"></script>
-    <script src="../js/perfect-scrollbar.min.js?1583795522"></script>
-    <script src="../js/perfect-scrollbar.jquery.min.js?1583795522"></script>
-    <script src="../js/jquery.sticky.js?1583795522"></script>
-    <script src="../js/featherlight.min.js?1583795522"></script>
-    <script src="../js/html5shiv-printshiv.min.js?1583795522"></script>
-    <script src="../js/highlight.pack.js?1583795522"></script>
+    <script src="../js/clipboard.min.js?1583796667"></script>
+    <script src="../js/perfect-scrollbar.min.js?1583796667"></script>
+    <script src="../js/perfect-scrollbar.jquery.min.js?1583796667"></script>
+    <script src="../js/jquery.sticky.js?1583796667"></script>
+    <script src="../js/featherlight.min.js?1583796667"></script>
+    <script src="../js/html5shiv-printshiv.min.js?1583796667"></script>
+    <script src="../js/highlight.pack.js?1583796667"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="../js/modernizr.custom.71422.js?1583795522"></script>
-    <script src="../js/learn.js?1583795522"></script>
-    <script src="../js/hugo-learn.js?1583795522"></script>
+    <script src="../js/modernizr.custom.71422.js?1583796667"></script>
+    <script src="../js/learn.js?1583796667"></script>
+    <script src="../js/hugo-learn.js?1583796667"></script>
 
-    <link href="../mermaid/mermaid.css?1583795522" type="text/css" rel="stylesheet" />
-    <script src="../mermaid/mermaid.min.js?1583795522"></script>
+    <link href="../mermaid/mermaid.css?1583796667" type="text/css" rel="stylesheet" />
+    <script src="../mermaid/mermaid.min.js?1583796667"></script>
     <script>
 	var config = {
         startOnLoad:true,
