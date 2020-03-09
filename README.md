@@ -47,3 +47,9 @@ Visit http://localhost:8080/ to see the site.
 #### Making Edits:
 As you save edits to a page, the site will live-reload to show your changes.
 
+1. Edit contentmap.yaml
+1. run yaml2dir like this:
+
+```python yaml2dir.py contentmap.yaml content```
+
+

@@ -11,4 +11,6 @@ Discover more AWS resources for building and running Machine Learnig projects on
 
 1. [Youtube - Technical Deep Dive Playlist](https://www.youtube.com/watch?v=uQc8Itd4UTs&list=PLhr1KZpdzukcOr_6j_zmSrvYnLUtgqsZz)
 
+1. [Edx Course on Sagemaker](https://www.edx.org/course/amazon-sagemaker-simplifying-machine-learning-appl)
+
 

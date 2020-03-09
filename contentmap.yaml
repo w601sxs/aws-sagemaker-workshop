@@ -1,0 +1,63 @@
+fooroot:
+- sampleproblems:
+  - "_index.md > --- \ntitle: Sample SageMaker Problems\nchapter: true \nweight: 1 \n---\n"
+  - structureddata:
+    - "_index.md > --- \ntitle: Structured data\nchapter: false \nweight: 1 \n---\n
+    1. [Predicting customer churn using Xgboost](
+    https://github.com/awslabs/amazon-sagemaker-examples/tree/master/introduction_to_applying_machine_learning/xgboost_customer_churn)\n
+    2. [Direct marketing](
+    https://gitlab.com/juliensimon/ent321)\n
+    3. [Sales prediction](
+    https://github.com/awslabs/amazon-sagemaker-examples/blob/fb6c6455e2bd46ca2a17dcd62746838617f01591/introduction_to_applying_machine_learning/xgboost_direct_marketing/xgboost_direct_marketing_sagemaker.ipynb)\n
+    4. [Fraud detection](
+    https://aws.amazon.com/solutions/fraud-detection-using-machine-learning/)\n
+    5. [Predictive maintenance](
+    https://aws.amazon.com/solutions/predictive-maintenance-using-machine-learning/)"
+  - timeseries:
+    - "_index.md > --- \ntitle: Time Series\nchapter: false \nweight: 2 \n---\n
+    1. [Workshop using GluonTS](https://github.com/aws-samples/amazon-sagemaker-time-series-prediction-using-gluonts\n
+    2. [Time series forecasting using Linear Learner](https://github.com/awslabs/amazon-sagemaker-examples/blob/fb6c6455e2bd46ca2a17dcd62746838617f01591/introduction_to_applying_machine_learning/linear_time_series_forecast/linear_time_series_forecast.ipynb)\n
+    3. [Forecasting electricity usage using DeepAR](https://github.com/awslabs/amazon-sagemaker-examples/tree/fb6c6455e2bd46ca2a17dcd62746838617f01591/introduction_to_amazon_algorithms/deepar_electricity)\n
+    "
+  - computervision:
+    - "_index.md > --- \ntitle: Computer Vision\nchapter: false \nweight: 3 \n---\n
+    1. [Image classification](https://github.com/awslabs/amazon-sagemaker-examples/tree/fb6c6455e2bd46ca2a17dcd62746838617f01591/introduction_to_amazon_algorithms/imageclassification_caltech)\n
+    2. [Object detection](https://github.com/awslabs/amazon-sagemaker-examples/tree/fb6c6455e2bd46ca2a17dcd62746838617f01591/introduction_to_amazon_algorithms/object_detection_pascalvoc_coco)\n
+    3. [Semantic Segmentation](https://github.com/awslabs/amazon-sagemaker-examples/tree/fb6c6455e2bd46ca2a17dcd62746838617f01591/introduction_to_amazon_algorithms/semantic_segmentation_pascalvoc)\n"
+  - nlp:
+    - "_index.md > --- \ntitle: Natural Language Processing\nchapter: false \nweight: 4 \n---\n
+    1. [Text classification](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/introduction_to_amazon_algorithms/blazingtext_text_classification_dbpedia)\n
+    2. [Topic modeling](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/introduction_to_applying_machine_learning/ntm_20newsgroups_topic_modeling)\n
+    3. [Language modeling using Pytorch](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-python-sdk/pytorch_lstm_word_language_model)\n"
+- specificfeatures:
+  - "_index.md > --- \ntitle: Specific SageMaker Features\nchapter: true \nweight: 2 \n---\n"
+  - preparedatasets:
+    - "_index.md > --- \ntitle: Prepare Datasets\nchapter: true \nweight: 1 \n---\n"
+  - buildtraindeploy:
+    - "_index.md > --- \ntitle: Build, Train and Deploy models\nchapter: true \nweight: 2 \n---\n"
+  - advancedtraining:
+    - "_index.md > --- \ntitle: Use Advanced Training capabilities\nchapter: true \nweight: 3 \n---\n"
+  - advanceddeployment:
+    - "_index.md > --- \ntitle: Use Advanced Deployment capabilities\nchapter: true \nweight: 4 \n---\n"
+  - optimizecosts:
+    - "_index.md > --- \ntitle: Optimize Costs\nchapter: true \nweight: 5 \n---\n"
+- useexistingcode:
+  - "_index.md > --- \ntitle: Use Existing Code\nchapter: true \nweight: 3 \n---\n"
+  - tensorflow:
+    - "_index.md > --- \ntitle: Use Existing Tensorflow Code\nchapter: true  \nweight: 1 \n---"
+  - pytorch:
+    - "_index.md > --- \ntitle: Use Existing Pytorch Code\nchapter: true \nweight: 2 \n---"
+  - mxnet:
+    - "_index.md > --- \ntitle: Use Existing MxNet Code\nchapter: true \nweight: 3 \n---"
+  - sklearn:
+    - "_index.md > --- \ntitle: Use Existing Scikit Learn Code\nchapter: true \nweight: 4 \n---"
+  - r:
+    - "_index.md > --- \ntitle: Use Existing R Code\nchapter: true \nweight: 5 \n---"
+- advancedtopics:
+  - "_index.md > --- \ntitle: Advanced Topics\nchapter: true \nweight: 4 \n---"
+  - reinforcementlearning:
+    - "_index.md > --- \ntitle: Reinforcement Learning\nchapter: true \nweight: 1 \n---"
+  - graphneuralnetworks:
+    - "_index.md > --- \ntitle: Graph Neural Networks\nchapter: true \nweight: 2 \n---"
+  - generativeai:
+    - "_index.md > --- \ntitle: Generative AI\nchapter: true \nweight: 3 \n---"
