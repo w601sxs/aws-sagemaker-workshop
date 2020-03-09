@@ -15,7 +15,7 @@ fooroot:
     https://aws.amazon.com/solutions/predictive-maintenance-using-machine-learning/)"
   - timeseries:
     - "_index.md > --- \ntitle: Time Series\nchapter: false \nweight: 2 \n---\n
-    1. [Workshop using GluonTS](https://github.com/aws-samples/amazon-sagemaker-time-series-prediction-using-gluonts\n
+    1. [Workshop using GluonTS](https://github.com/aws-samples/amazon-sagemaker-time-series-prediction-using-gluonts)\n
     2. [Time series forecasting using Linear Learner](https://github.com/awslabs/amazon-sagemaker-examples/blob/fb6c6455e2bd46ca2a17dcd62746838617f01591/introduction_to_applying_machine_learning/linear_time_series_forecast/linear_time_series_forecast.ipynb)\n
     3. [Forecasting electricity usage using DeepAR](https://github.com/awslabs/amazon-sagemaker-examples/tree/fb6c6455e2bd46ca2a17dcd62746838617f01591/introduction_to_amazon_algorithms/deepar_electricity)\n
     "
@@ -29,35 +29,75 @@ fooroot:
     1. [Text classification](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/introduction_to_amazon_algorithms/blazingtext_text_classification_dbpedia)\n
     2. [Topic modeling](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/introduction_to_applying_machine_learning/ntm_20newsgroups_topic_modeling)\n
     3. [Language modeling using Pytorch](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-python-sdk/pytorch_lstm_word_language_model)\n"
+  - marketplace:
+    - "_index.md > --- \ntitle: SageMaker Marketplace Examples on SageMaker\nchapter: false \nweight: 5 \n---\n
+    1. [AWS Marketplace examples on SageMaker](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/aws_marketplace)"
 - specificfeatures:
   - "_index.md > --- \ntitle: Specific SageMaker Features\nchapter: true \nweight: 2 \n---\n"
   - preparedatasets:
-    - "_index.md > --- \ntitle: Prepare Datasets\nchapter: true \nweight: 1 \n---\n"
+    - "_index.md > --- \ntitle: Prepare Datasets\nchapter: true \nweight: 1 \n---\n
+    1. [Ground Truth Labeling Examples](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/ground_truth_labeling_jobs)\n
+    2. [SageMaker Prpcessing Job](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker_processing)\n"
   - buildtraindeploy:
-    - "_index.md > --- \ntitle: Build, Train and Deploy models\nchapter: true \nweight: 2 \n---\n"
+    - "_index.md > --- \ntitle: Build, Train and Deploy models\nchapter: true \nweight: 2 \n---\n
+    1. [With SageMaker built-in algorithms](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/introduction_to_amazon_algorithms)\n
+    2. [With Supported Frameowrks](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-python-sdk)\n
+    3. [Using the Data Science SDK](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/step-functions-data-science-sdk)\n
+    4. [Using SageMaker Autopilot](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/autopilot)\n"
   - advancedtraining:
-    - "_index.md > --- \ntitle: Use Advanced Training capabilities\nchapter: true \nweight: 3 \n---\n"
+    - "_index.md > --- \ntitle: Use Advanced Training capabilities\nchapter: true \nweight: 3 \n---\n
+    1. [Automatic Model Tuning](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/hyperparameter_tuning)\n
+    2. [Manage Experiments with SageMaker Experiments](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-experiments)\n
+    3. [Debug Training jobs with SageMaker Debugger](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-debugger)\n
+    4. [Handling KMS Encrypted data](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/advanced_functionality/handling_kms_encrypted_data)\n"
   - advanceddeployment:
-    - "_index.md > --- \ntitle: Use Advanced Deployment capabilities\nchapter: true \nweight: 4 \n---\n"
+    - "_index.md > --- \ntitle: Use Advanced Deployment capabilities\nchapter: true \nweight: 4 \n---\n
+    1. [Deploy Multi-model Endpoints](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/advanced_functionality/multi_model_xgboost_home_value)\n
+    2. [Deploy Inference Pipelines](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/advanced_functionality/inference_pipeline_sparkml_xgboost_abalone)\n
+    3. [Monitor models with SageMaker Model Monitor](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker_model_monitor)\n
+    4. [Compile models with SageMaker Neo](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker_neo_compilation_jobs)\n"
   - optimizecosts:
-    - "_index.md > --- \ntitle: Optimize Costs\nchapter: true \nweight: 5 \n---\n"
+    - "_index.md > --- \ntitle: Optimize Costs\nchapter: true \nweight: 5 \n---\n
+    1. [Managed spot training with Tensorflow on SageMaker](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-python-sdk/managed_spot_training_tensorflow_estimator)\n
+    2. [Managed spot training with MxNet on SageMaker](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-python-sdk/managed_spot_training_mxnet)\n
+    3. [Elastic Inference](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-python-sdk/tensorflow_serving_using_elastic_inference_with_your_own_model)\n"
 - useexistingcode:
   - "_index.md > --- \ntitle: Use Existing Code\nchapter: true \nweight: 3 \n---\n"
   - tensorflow:
-    - "_index.md > --- \ntitle: Use Existing Tensorflow Code\nchapter: true  \nweight: 1 \n---"
+    - "_index.md > --- \ntitle: Use Existing Tensorflow Code\nchapter: true  \nweight: 1 \n---\n
+    1. [Tensorflow Script mode](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-python-sdk/tensorflow_script_mode_quickstart)\n
+    1. [Using Horovod with Tensorflow](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-python-sdk/tensorflow_script_mode_horovod)\n"
   - pytorch:
-    - "_index.md > --- \ntitle: Use Existing Pytorch Code\nchapter: true \nweight: 2 \n---"
+    - "_index.md > --- \ntitle: Use Existing Pytorch Code\nchapter: true \nweight: 2 \n---\n
+    1. [Simple example using PyTorch custom code](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-python-sdk/pytorch_cnn_cifar10)\n
+    2. [Extending the pytorch container](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/advanced_functionality/pytorch_extending_our_containers)\n
+    3. [Distributed pytorch using Horovod](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-python-sdk/pytorch_horovod_mnist)\n"
   - mxnet:
-    - "_index.md > --- \ntitle: Use Existing MxNet Code\nchapter: true \nweight: 3 \n---"
+    - "_index.md > --- \ntitle: Use Existing MxNet Code\nchapter: true \nweight: 3 \n---\n
+    1. [Simple example using MxNet custom code](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-python-sdk/mxnet_mnist)\n
+    1. [Hosting ONNX models from MxNet using Elastic Inference](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-python-sdk/mxnet_onnx_eia)\n"
   - sklearn:
-    - "_index.md > --- \ntitle: Use Existing Scikit Learn Code\nchapter: true \nweight: 4 \n---"
+    - "_index.md > --- \ntitle: Use Existing Scikit Learn Code\nchapter: true \nweight: 4 \n---\n
+    1. [Scikit Learn end-to-end on SageMaker](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-python-sdk/scikit_learn_randomforest)\n
+    2. [Bring your own Scikit Learn Container](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/advanced_functionality/scikit_bring_your_own)\n
+    3. [Scikit Learn Multi-model endpoint](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/advanced_functionality/multi_model_sklearn_home_value)\n"
   - r:
-    - "_index.md > --- \ntitle: Use Existing R Code\nchapter: true \nweight: 5 \n---"
+    - "_index.md > --- \ntitle: Use Existing R Code\nchapter: true \nweight: 5 \n---\n
+    1. [Bring your own R code to SageMaker](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/advanced_functionality/r_bring_your_own)\n
+    2. [Using the R Kernel](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/advanced_functionality/r_kernel)\n"
+  - spark:
+    - "_index.md > --- \ntitle: Using SageMaker Spark\nchapter: true \nweight: 6 \n---\n
+    1. [SageMaker Spark Examples](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-spark)\n"
 - advancedtopics:
-  - "_index.md > --- \ntitle: Advanced Topics\nchapter: true \nweight: 4 \n---"
+  - "_index.md > --- \ntitle: Advanced Topics\nchapter: true \nweight: 4 \n---\n"
   - reinforcementlearning:
-    - "_index.md > --- \ntitle: Reinforcement Learning\nchapter: true \nweight: 1 \n---"
+    - "_index.md > --- \ntitle: Reinforcement Learning\nchapter: true \nweight: 1 \n---\n
+    1. [Reinforcemet Learning examples](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/reinforcement_learning)\n"
   - graphneuralnetworks:
-    - "_index.md > --- \ntitle: Graph Neural Networks\nchapter: true \nweight: 2 \n---"
+    - "_index.md > --- \ntitle: Graph Neural Networks\nchapter: true \nweight: 2 \n---\n
+    1. [Deep Graph  Library on SageMaker](https://github.com/dmlc/dgl/tree/master/tutorials/models)\n
+    2. [Graph convolutional Networks](https://github.com/awslabs/amazon-sagemaker-examples/tree/master/sagemaker-python-sdk/dgl_gcn)"
   - generativeai:
-    - "_index.md > --- \ntitle: Generative AI\nchapter: true \nweight: 3 \n---"
+    - "_index.md > --- \ntitle: Generative AI\nchapter: true \nweight: 3 \n---\n
+    1. [Generative LDA details](https://github.com/awslabs/amazon-sagemaker-examples/blob/5a898eb601a21f4bb764afa0fc7b772e28cb91be/sagemaker-python-sdk/dgl_kge/kge_pytorch_hypertune.ipynb)\n
+    2. [Generate new text from Wiki data](https://github.com/awslabs/amazon-sagemaker-examples/blob/55dd33e747bdbc1909be57bb5b2031f7e639566c/sagemaker-python-sdk/pytorch_lstm_word_language_model/pytorch_rnn.ipynb)"

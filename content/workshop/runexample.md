@@ -5,7 +5,6 @@ weight: 5
 description: Run the AutoPilot example on SageMaker 
 ---
 
-# Run AutoPilot Example
 A typical introductory task in machine learning (the "Hello World" equivalent) is one that uses a dataset to predict whether a customer will enroll for a term deposit at a bank, after one or more phone calls. For more information about the task and the dataset used, see Bank Marketing Data Set.
 
 Direct marketing, through mail, email, phone, etc., is a common tactic to acquire customers. Because resources and a customer's attention are limited, the goal is to only target the subset of prospects who are likely to engage with a specific offer. Predicting those potential customers based on readily available information like demographics, past interactions, and environmental factors is a common machine learning problem. You can imagine that this task would readily translate to marketing lead prioritization in your own organization.

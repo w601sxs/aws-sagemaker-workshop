@@ -5,8 +5,6 @@ weight: 4
 description: Start by loading the AutoPilot example on SageMaker 
 ---
 
-# Load AutoPilot Example
-
 
 ## Load Example on Sagemaker Studio
 

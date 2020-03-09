@@ -5,8 +5,6 @@ weight: 3
 description: In this activity you will either set up SageMaker Studio or a SageMaker notebook instance
 ---
 
-# Getting Started
-
 To get started, you will need an AWS account. You can either use:
 
 1. Your own account; or ...
