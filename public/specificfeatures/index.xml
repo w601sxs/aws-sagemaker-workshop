@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Specific SageMaker Features on Amazon RoboMaker Workshop</title>
-    <link>/specificfeatures/</link>
+    <link>https://master.dyzeyfk4t4h9o.amplifyapp.com/specificfeatures/</link>
     <description>Recent content in Specific SageMaker Features on Amazon RoboMaker Workshop</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="/specificfeatures/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://master.dyzeyfk4t4h9o.amplifyapp.com/specificfeatures/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
