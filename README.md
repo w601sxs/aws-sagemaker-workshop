@@ -52,4 +52,8 @@ As you save edits to a page, the site will live-reload to show your changes.
 
 ```python yaml2dir.py contentmap.yaml content```
 
+3. Then run
+```cp -r fooroot/* content/``` to copy data from the test "fooroot" folder to the content folder
+4. Commit and push when ready!
+
 
