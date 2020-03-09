@@ -12,19 +12,19 @@ relativeURLs = true
 hrefTargetBlank = true
 
 [params]
-editURL = "https://github.com/jerwallace/aws-robomaker-workshops/edit/master/content/"
+editURL = "https://github.com/w601sxs/aws-sagemaker-workshop/edit/master/content/"
 themeVariant = "mine"
 showVisitedLinks = false
 author = ""
-description = "Amazon RoboMaker Workshop"
+description = "Amazon SageMaker Workshop"
 disableSearch = false
 disableAssetsBusting = false
 disableLanguageSwitchingButton = true
 disableShortcutsTitle=false
 disableInlineCopyToClipBoard = true
-ghrepo = "https://github.com/jerwallace/aws-robomaker-workshops/"
+ghrepo = "https://github.com/w601sxs/aws-sagemaker-workshop"
 branch = "master"
-template_bucket = "robomakerworkshop.com"
+template_bucket = "sagemakerworkshop.com"
 
 
 
@@ -50,12 +50,12 @@ weight = 20
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-github'></i> GitHub Project"
-url = "https://github.com/jerwallace/aws-robomaker-workshops"
+url = "https://github.com/w601sxs/aws-sagemaker-workshop"
 weight = 30
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-envelope'></i> Have questions?"
-url = "mailto:robomaker-workshops@amazon.com"
+url = "mailto:sagemaker-workshops@amazon.com"
 weight = 40
 
 
