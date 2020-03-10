@@ -10,6 +10,7 @@
 
 {{ range .Pages }}
 	<li><strong><a href="{{.Permalink}}">{{.Title}}</a></strong></li>
+	{{ .Content }}
 {{ end }}
 
 <p>{{ .Params.addendum | safeHTML  }}</p>
