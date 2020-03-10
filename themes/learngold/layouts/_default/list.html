@@ -9,10 +9,7 @@
 {{ .Content }}
 
 {{ range .Pages }}
-	<p><strong><a href="{{.Permalink}}">{{.Title}}</a></strong></p>
-	<p>
-	{{ .Content }}
-	</p> 
+	<li><strong><a href="{{.Permalink}}">{{.Title}}</a></strong></li>
 {{ end }}
 
 <p>{{ .Params.addendum | safeHTML  }}</p>
