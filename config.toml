@@ -8,7 +8,6 @@ googleAnalytics = "UA-44634850-4"
 sectionPagesMenu = "main"
 relativeURLs = true
 
-
 [blackfriday]
 hrefTargetBlank = true
 
