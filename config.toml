@@ -1,7 +1,7 @@
 languageCode = "en-us"
 ignoreFiles = [ "\\.files/README.md$",  ]
 defaultContentLanguage = "en"
-title = "Amazon SageMaker Workshop"
+title = "Get Started on Amazon SageMaker"
 theme = "learngold"
 uglyurls = false
 googleAnalytics = "UA-44634850-4"
