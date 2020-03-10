@@ -1,4 +1,4 @@
-# AWS JPL Rover workshop
+# AWS Sagemaker workshop
 
 ### Setup:
 
