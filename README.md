@@ -23,7 +23,7 @@ If you are on a Windows machine and use Scoop for package management, you can in
 
 #### Clone this repo:
 From wherever you checkout repos:
-`git clone git@github.com:jerwallace/aws-robotics-day.git` (or your fork)
+`git clone https://github.com/w601sxs/aws-sagemaker-workshop.git` (or your fork)
 
 
 #### Install Node.js and npm:
