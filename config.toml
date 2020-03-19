@@ -7,7 +7,6 @@ uglyurls = false
 googleAnalytics = "UA-44634850-4"
 sectionPagesMenu = "main"
 relativeURLs = true
-baseURL= "https://www.getstartedonsagemaker.com"
 
 [blackfriday]
 hrefTargetBlank = true
