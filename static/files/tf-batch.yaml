@@ -1,0 +1,21 @@
+apiVersion: sagemaker.aws.amazon.com/v1
+kind: BatchTransformJob
+metadata:
+  name: tf-churn-batch
+spec:
+  region: us-east-2
+  modelName: MODEL
+  transformInput:
+    contentType: application/json
+    dataSource:
+      s3DataSource:
+        s3DataType: S3Prefix
+        s3Uri: s3://BUCKET/kubeflow-batch/in/
+    splitType: Line
+  batchStrategy: MultiRecord
+  transformOutput:
+    s3OutputPath: s3://BUCKET/kubeflow-batch/out
+  transformResources:
+    instanceCount: 1
+    instanceType: ml.m5.xlarge
+

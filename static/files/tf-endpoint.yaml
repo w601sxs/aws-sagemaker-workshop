@@ -1,0 +1,20 @@
+apiVersion: sagemaker.aws.amazon.com/v1
+kind: HostingDeployment
+metadata:
+  name: tf-churn
+spec:
+  region: us-east-2
+  productionVariants:
+    - variantName: AllTraffic
+      modelName: tf-churn-model
+      initialInstanceCount: 1
+      instanceType: ml.m5.xlarge
+      initialVariantWeight: 1
+  models:
+    - name: tf-churn-model
+      executionRoleArn: ROLE
+      containers:
+        - containerHostname: tf1
+          modelDataUrl: MODEL_URI
+          image: 763104351884.dkr.ecr.REGION.amazonaws.com/tensorflow-inference:2.1-gpu
+

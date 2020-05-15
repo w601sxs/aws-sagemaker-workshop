@@ -10,7 +10,10 @@ Welcome! Amazon SageMaker is a fully managed service that provides every develop
 
 Traditional ML development is a complex, expensive, iterative process made even harder because there are no integrated tools for the entire machine learning workflow. You need to stitch together tools and workflows, which is time-consuming and error-prone. SageMaker solves this challenge by providing all of the components used for machine learning in a single toolset so models get to production faster with much less effort and at lower cost.
 
-[Click here to get started with building models using Amazon SageMaker!](/workshop)
+Click on one of these links to start workshops that explore:
+
+* [Building models using Amazon SageMaker and AutoPilot](/workshop)
+* [Amazon SageMaker Operators for Kubernetes](/workshop-k8s-operators)
 
 We have also collected links on the left menu organized by following topics:
 
