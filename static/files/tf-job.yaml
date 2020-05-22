@@ -1,0 +1,43 @@
+apiVersion: sagemaker.aws.amazon.com/v1
+kind: TrainingJob
+metadata:
+  name: tf-cust-churn
+spec:
+  hyperParameters:
+    - name: model_dir
+      value: "\"s3://BUCKET/tf-cust-churn/model\""
+    - name: sagemaker_container_log_level
+      value: "20"
+    - name: sagemaker_enable_cloudwatch_metrics
+      value: "false"
+    - name: sagemaker_job_name
+      value: "\"tf-cust-churn\""
+    - name: sagemaker_parameter_server_enabled
+      value: "true"
+    - name: sagemaker_program
+      value: "\"tftab.py\""
+    - name: sagemaker_region
+      value: "\"us-east-2\""
+    - name: sagemaker_submit_directory
+      value: "\"s3://BUCKET/JOBNAME/source/sourcedir.tar.gz\""
+  algorithmSpecification:
+    trainingImage: 763104351884.dkr.ecr.us-east-2.amazonaws.com/tensorflow-training:2.1.0-gpu-py3
+    trainingInputMode: File
+  roleArn: arn:aws:iam::ACCOUNT:role/ROLE
+  region: us-east-2
+  outputDataConfig:
+    s3OutputPath: s3://BUCKET/JOBNAME/out/
+  resourceConfig:
+    instanceCount: 1
+    instanceType: ml.m5.xlarge
+    volumeSizeInGB: 30
+  stoppingCondition:
+    maxRuntimeInSeconds: 86400
+  inputDataConfig:
+    - channelName: training
+      dataSource:
+        s3DataSource:
+          s3DataType: S3Prefix
+          s3Uri: s3://BUCKET/data/
+          s3DataDistributionType: FullyReplicated
+      compressionType: None
