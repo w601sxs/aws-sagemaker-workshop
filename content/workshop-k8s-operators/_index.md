@@ -1,7 +1,7 @@
 +++
 title = "SageMaker Operators for Kubernetes Workshop"
 date = 2020-04-27T08:16:25-06:00
-weight = 6
+weight = 4
 type = "mylayout"
 chapter = true
 +++
