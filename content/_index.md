@@ -13,12 +13,13 @@ Traditional ML development is a complex, expensive, iterative process made even 
 Click on one of these links to start workshops that explore:
 
 * [Building models using Amazon SageMaker and AutoPilot](/workshop)
+* [Training models using Amazon SageMaker Studio](/workshop-studio-training)
 * [Amazon SageMaker Operators for Kubernetes](/workshop-k8s-operators)
 
 We have also collected links on the left menu organized by following topics:
 
-- [Sample SageMaker Problems](/sampleproblems)
-- [Specific SageMaker Features](specificfeatures)
-- [How to use Existing code](/useexistingcode)
-- [Advanced topics](/advancedtopics)
+- [Sample SageMaker Problems](/resources/sampleproblems)
+- [Specific SageMaker Features](/resources/specificfeatures)
+- [How to use Existing code](/resources/useexistingcode)
+- [Advanced topics](/resources/advancedtopics)
 
