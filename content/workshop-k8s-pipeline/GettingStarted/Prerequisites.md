@@ -79,3 +79,8 @@ Once your cluster is set up, follow the `IAM Permissions` [instructions](https:/
 ### KFP SDK
 
 Install the [KFP SDK](https://www.kubeflow.org/docs/pipelines/sdk/install-sdk/#install-the-kubeflow-pipelines-sdk).
+
+### Alternative simpler setup
+
+If you want an easier way to deploy an EKS cluster with Kubeflow, you can use this [CloudFormation template](https://github.com/aws-samples/eks-kubeflow-cloudformation-quick-start).
+
