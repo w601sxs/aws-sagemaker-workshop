@@ -1,5 +1,5 @@
 +++
-title = "Integrating SageMaker with Kubeflow Pipelines using SageMaker Kubeflow Components"
+title = "SageMaker Components for Kubeflow Pipelines Workshop"
 date = 2020-04-27T08:16:25-06:00
 weight = 5
 chapter = true
