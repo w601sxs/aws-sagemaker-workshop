@@ -15,6 +15,7 @@ Click on one of these links to start workshops that explore:
 * [Building models using Amazon SageMaker and AutoPilot](/workshop)
 * [Training models using Amazon SageMaker Studio](/workshop-studio-training)
 * [Amazon SageMaker Operators for Kubernetes](/workshop-k8s-operators)
+* [Amazon SageMaker Components for Kubeflow Pipelines](/workshop-k8s-pipeline)
 
 We have also collected links on the left menu organized by following topics:
 
